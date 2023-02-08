@@ -26,12 +26,12 @@ app.get('/api/hello', function (req, res) {
 
 app.get('/api/whoami', (req, res) => {
     const software = req.header('User-Agent')
-    const lenguage = req.header('Accept-Language')
+    const language = req.header('Accept-Language')
     const ipaddress = '127.0.0.1'
 
     res.json({
       software,
-      lenguage,
+      language,
       ipaddress
     })
 })
